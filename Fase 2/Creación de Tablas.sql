@@ -11,5 +11,5 @@ CREATE TABLE DMF (
     Prescriber_id_bridge NUMERIC PRIMARY KEY,
     Adress_city NVARCHAR2(50),
     Specialty_id_1 NVARCHAR2(50),
-    Dirección NVARCHAR2(50)
+    DirecciÃ³n NVARCHAR2(50)
 );
