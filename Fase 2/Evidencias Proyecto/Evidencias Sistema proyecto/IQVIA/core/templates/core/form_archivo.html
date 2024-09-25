@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Archivo</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+</head>
+<body>
+    <div class="centered-box">
+        <h1>Subir Archivo</h1>
+        <!-- Formulario -->
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}  <!-- Esto mostrará el formulario con todos los campos y etiquetas -->
+            <button type="submit">Subir</button>
+        </form>
+    </div>
+
+    <script src="{% static 'core/js/script.js' %}"></script>
+</body>
+</html>
